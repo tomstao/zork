@@ -37,10 +37,6 @@ int main() {
 
 // Function definitions
 
-
-
-
-
 int movePlayer(int currentRoom, const string &command) {
     if (command == "north") {
         if (currentRoom == 0) {
