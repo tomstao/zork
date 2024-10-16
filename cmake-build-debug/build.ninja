@@ -79,6 +79,12 @@ build CMakeFiles/zork.dir/textContent.cpp.o: CXX_COMPILER__zork_unscanned_Debug 
   OBJECT_DIR = CMakeFiles/zork.dir
   OBJECT_FILE_DIR = CMakeFiles/zork.dir
 
+build CMakeFiles/zork.dir/gameFunctions.cpp.o: CXX_COMPILER__zork_unscanned_Debug /Users/sutommy/CLionProjects/zork/gameFunctions.cpp || cmake_object_order_depends_target_zork
+  DEP_FILE = CMakeFiles/zork.dir/gameFunctions.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/zork.dir
+  OBJECT_FILE_DIR = CMakeFiles/zork.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target zork
@@ -87,7 +93,7 @@ build CMakeFiles/zork.dir/textContent.cpp.o: CXX_COMPILER__zork_unscanned_Debug 
 #############################################
 # Link the executable zork
 
-build zork: CXX_EXECUTABLE_LINKER__zork_Debug CMakeFiles/zork.dir/main.cpp.o CMakeFiles/zork.dir/room.cpp.o CMakeFiles/zork.dir/command.cpp.o CMakeFiles/zork.dir/invetory.cpp.o CMakeFiles/zork.dir/textContent.cpp.o
+build zork: CXX_EXECUTABLE_LINKER__zork_Debug CMakeFiles/zork.dir/main.cpp.o CMakeFiles/zork.dir/room.cpp.o CMakeFiles/zork.dir/command.cpp.o CMakeFiles/zork.dir/invetory.cpp.o CMakeFiles/zork.dir/textContent.cpp.o CMakeFiles/zork.dir/gameFunctions.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
   OBJECT_DIR = CMakeFiles/zork.dir
   POST_BUILD = :

@@ -18,8 +18,7 @@ int main() {
     bool gameWon = false;
 
     printIntroduction();
-
-
+    printIntroduction2();
     while (!gameWon) {
         displayRoomDescription(currentRoom);
         getCommand(command);

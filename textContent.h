@@ -5,7 +5,7 @@
 #ifndef TEXTCONTENT_H
 #define TEXTCONTENT_H
 void printIntroduction();
-
+void printIntroduction2();
 
 
 // class textContent {

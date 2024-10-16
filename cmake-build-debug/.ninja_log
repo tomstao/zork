@@ -3,3 +3,6 @@
 5	329	1729047938042397603	CMakeFiles/zork.dir/main.cpp.o	ed761db5a66b192a
 329	355	1729047938366461920	zork	9489a2bf9abe1a1a
 5	277	1729046292386474003	CMakeFiles/zork.dir/command.cpp.o	d43f5497aa8c0d32
+5	51	1729083236107190127	CMakeFiles/zork.dir/invetory.cpp.o	e567ba8286caaf10
+5	385	1729083236107308419	CMakeFiles/zork.dir/textContent.cpp.o	6ffe7a28f92a070e
+4	385	1729083236106649127	CMakeFiles/zork.dir/main.cpp.o	ed761db5a66b192a
