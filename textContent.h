@@ -7,6 +7,7 @@
 void printIntroduction();
 void printIntroduction2();
 void dayExploration();
+void dayOne();
 
 
 // class textContent {
