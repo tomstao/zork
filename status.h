@@ -4,10 +4,11 @@
 
 #ifndef STATUS_H
 #define STATUS_H
+#include <string>
 
 extern int choice[15];
 extern int radio;
-extern int dayOneCommand;
+extern std::string dayOneCommand;
 // class status {
 //
 // };

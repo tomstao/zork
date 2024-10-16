@@ -25,6 +25,7 @@ int main() {
         dayExploration();
         displayRoomDescription(currentMove);
         dayOne();
+        getCommand(dayOneCommand);
         getCommand(command);
         currentMove = movePlayer(currentMove, command);
 
