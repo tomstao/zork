@@ -2,11 +2,12 @@
 #include <string>
 #include "room.h"
 #include "command.h"
+#include "invetory.h"
+#include "textContent.h"
 
 using namespace std;
 
 // Function declarations
-void printIntroduction();
 int movePlayer(int currentRoom, const string &command);
 bool isGameOver(int room);
 
@@ -17,6 +18,7 @@ int main() {
     bool gameWon = false;
 
     printIntroduction();
+
 
     while (!gameWon) {
         displayRoomDescription(currentRoom);
@@ -34,12 +36,7 @@ int main() {
 }
 
 // Function definitions
-void printIntroduction() {
-    cout << "You wakes up in an abandoned city, overgrown with nature." << endl;
-    cout << "Explore the mysterious world and find the treasure!" << endl;
-    cout << "Type 'north', 'south', 'east', or 'west' to move." << endl;
-    cout << "Type 'quit' to exit the game." << endl << endl;
-}
+
 
 
 

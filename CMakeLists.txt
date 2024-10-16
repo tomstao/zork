@@ -7,4 +7,8 @@ add_executable(zork main.cpp
         room.cpp
         room.h
         command.cpp
-        command.h)
+        command.h
+        invetory.cpp
+        invetory.h
+        textContent.cpp
+        textContent.h)
