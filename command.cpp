@@ -32,7 +32,54 @@ int movePlayer(int currentMove, const string &command) {
     return currentMove;  // No movement if command is invalid
 }
 
-void dayOneChoice()
+int dayOneChoice(string &command)
 {
+    using namespace std;
+    if (command == "explore")
+    {
+        cout << "You found a supermarket nearby" << endl;
+    }
+    if (command == "gather")
+    {
+        cout << "You found food and supplies" << endl;
+    }
+    if (command == "lab")
+    {
+        cout << "You walk into the  laboratory under your basement" << endl;
+    }
+    if (command == "radio")
+    {
+        cout << "You decide go to the port to send radio signal" << endl;
+    }
+    return 0;
+}
 
+int dayTwoChoice(string &command)
+{
+    return 0;
+}
+
+int dayThreeChoice(string &command)
+{
+    return 0;
+}
+
+int dayFourChoice(string &command)
+{
+    return 0;
+}
+
+int dayFiveChoice(string &command)
+{
+    return 0;
+}
+
+int daySixChoice(string &command)
+{
+    return 0;
+}
+
+int daySevenChoice(string &command)
+{
+    return 0;
 }

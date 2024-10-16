@@ -52,7 +52,40 @@ void dayOne()
     cout << "You gather your courage and prepare for your first venture into the dangerous streets." <<endl;
     nextNarration();
     cout << "Explore the nearby area(Enter explore)." <<endl;
-    cout << "Gather initial supplies (Enter Gather)." <<endl;
+    cout << "Gather initial supplies (Enter gather)." <<endl;
     cout << "Find clues about the virus outbreak (Enter lab)." <<endl;
     cout << "Send the radio message to the potential survivors.(Enter radio)" << endl;
+}
+
+void dayTwo()
+{
+    using namespace std;
+    cout << "DAY 2 : " << endl;
+}
+void dayThree()
+{
+    using namespace std;
+    cout << "DAY 3 : " << endl;
+}
+
+void dayFour()
+{
+    using namespace std;
+    cout << "DAY 4 : " << endl;
+}
+void dayFive()
+{
+    using namespace std;
+    cout << "DAY 5 : " << endl;
+}
+void daySix()
+{
+    using namespace std;
+    cout << "DAY 6 : " << endl;
+}
+
+void daySeven()
+{
+    using namespace std;
+    cout << "DAY 7 : " << endl;
 }

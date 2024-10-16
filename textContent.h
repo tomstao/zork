@@ -8,6 +8,12 @@ void printIntroduction();
 void printIntroduction2();
 void dayExploration();
 void dayOne();
+void dayTwo();
+void dayThree();
+void dayFour();
+void dayFive();
+void daySix();
+void daySeven();
 
 
 // class textContent {
