@@ -6,7 +6,6 @@
 #include "invetory.h"
 #include "textContent.h"
 
-using namespace std;
 
 // Function declarations
 int movePlayer(int currentRoom, const string &command);
