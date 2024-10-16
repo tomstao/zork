@@ -30,7 +30,7 @@ void dayExploration()
     using namespace std;
     cout << "The player can explore various city locations: " << endl;
     cout << "an old lab, a library, abandoned houses, and barricaded stores. "<< endl;
-    cout << "Each place holds clues, supplies, or remnants of humanity. "<< endl;
+    cout << "Each place holds clues, supplies, or remnants of humanity."<< endl;
     cout << "There are no enemies during the day, but there is always a sense of danger."<< endl;
 }
 
