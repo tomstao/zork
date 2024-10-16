@@ -8,6 +8,7 @@
 using namespace std;
 
 void getCommand(string &command);
+int movePlayer(int currentMove, const string &command);
 
 
 // class command {
