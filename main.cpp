@@ -25,6 +25,7 @@ int main() {
     while (!gameWon) {
         dayExploration();
         displayRoomDescription(currentRoom);
+        dayOne();
         getCommand(command);
         currentRoom = movePlayer(currentRoom, command);
 
