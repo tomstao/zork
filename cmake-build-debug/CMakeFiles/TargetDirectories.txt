@@ -1,0 +1,3 @@
+/Users/sutommy/CLionProjects/zork/cmake-build-debug/CMakeFiles/zork.dir
+/Users/sutommy/CLionProjects/zork/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sutommy/CLionProjects/zork/cmake-build-debug/CMakeFiles/rebuild_cache.dir
