@@ -35,7 +35,7 @@ int main() {
 
 // Function definitions
 void printIntroduction() {
-    cout << "Welcome to the Text Adventure Game!" << endl;
+    cout << "You wakes up in an abandoned city, overgrown with nature." << endl;
     cout << "Explore the mysterious world and find the treasure!" << endl;
     cout << "Type 'north', 'south', 'east', or 'west' to move." << endl;
     cout << "Type 'quit' to exit the game." << endl << endl;
@@ -48,7 +48,9 @@ int movePlayer(int currentRoom, const string &command) {
     if (command == "north") {
         if (currentRoom == 0) {
             return 1;  // Move to hallway
-        } else if (currentRoom == 1) {
+        }
+
+        if (currentRoom == 1) {
             return 2;  // Move to treasure room
         }
     } else if (command == "south") {
