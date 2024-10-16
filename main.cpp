@@ -2,6 +2,7 @@
 #include <string>
 #include "room.h"
 #include "command.h"
+#include "gameFuntions.h"
 #include "invetory.h"
 #include "textContent.h"
 
@@ -18,9 +19,11 @@ int main() {
     bool gameWon = false;
 
     printIntroduction();
-
-
+    nextNarration();
+    printIntroduction2();
+    nextNarration();
     while (!gameWon) {
+        dayExploration();
         displayRoomDescription(currentRoom);
         getCommand(command);
         currentRoom = movePlayer(currentRoom, command);
