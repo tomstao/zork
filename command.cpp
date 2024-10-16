@@ -4,8 +4,8 @@
 #include "command.h"
 #include <iostream>
 
-using namespace std;
 void getCommand(string &command) {
+    using namespace std;
     cout << "> ";
     getline(cin, command);
 }
