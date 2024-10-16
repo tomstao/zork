@@ -7,3 +7,9 @@
 16	480	1729090493198819600	CMakeFiles/zork.dir/gameFuntions.cpp.o	bacafcbff9af32f8
 2	54	1729091052479590450	build.ninja	3ddde4a9f544dbbd
 15	478	1729090493198348972	CMakeFiles/zork.dir/room.cpp.o	e34777baa0c107e4
+8	530	1729118073739408584	CMakeFiles/zork.dir/status.cpp.o	350a84e880fc66d9
+7	531	1729118073738562124	CMakeFiles/zork.dir/main.cpp.o	ed761db5a66b192a
+7	533	1729118073739313417	CMakeFiles/zork.dir/gameFuntions.cpp.o	bacafcbff9af32f8
+7	538	1729118073739208500	CMakeFiles/zork.dir/textContent.cpp.o	6ffe7a28f92a070e
+7	540	1729118073739089958	CMakeFiles/zork.dir/command.cpp.o	d43f5497aa8c0d32
+540	641	1729118074272128794	zork	d68b077e0daba23a

@@ -25,3 +25,10 @@ void clearInput()
     cin.clear();
     cin.ignore(1000, '\n');
 }
+
+void endGame()
+{
+    nextNarration();
+    using namespace std;
+    cout << "end" << endl;
+}

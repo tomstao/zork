@@ -24,9 +24,42 @@ int main() {
     while (!gameWon) {
         dayExploration();
         displayRoomDescription(currentMove);
+
         dayOne();
         getCommand(dayOneCommand);
         dayOneChoice(dayOneCommand);
+        nextNarration();
+
+        dayTwo();
+        getCommand(dayTwoCommand);
+        dayTwoChoice(dayTwoCommand);
+        nextNarration();
+
+        dayThree();
+        getCommand(dayThreeCommand);
+        dayThreeChoice(dayThreeCommand);
+        nextNarration();
+
+        dayFour();
+        getCommand(dayFourCommand);
+        dayFourChoice(dayFourCommand);
+        nextNarration();
+
+        dayFive();
+        getCommand(dayFiveCommand);
+        dayFiveChoice(dayFiveCommand);
+        nextNarration();
+
+        daySixChoice(daySixCommand);
+        getCommand(daySixCommand);
+        daySixChoice(daySixCommand);
+        nextNarration();
+
+        daySevenChoice(daySevenCommand);
+        getCommand(daySevenCommand);
+        daySevenChoice(daySevenCommand);
+        nextNarration();
+
 
         getCommand(command);
         currentMove = movePlayer(currentMove, command);

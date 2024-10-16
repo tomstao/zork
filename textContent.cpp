@@ -61,31 +61,37 @@ void dayTwo()
 {
     using namespace std;
     cout << "DAY 2 : " << endl;
+    cout << "test" << endl;
 }
 void dayThree()
 {
     using namespace std;
     cout << "DAY 3 : " << endl;
+    cout << "test" << endl;
 }
 
 void dayFour()
 {
     using namespace std;
     cout << "DAY 4 : " << endl;
+    cout << "test" << endl;
 }
 void dayFive()
 {
     using namespace std;
     cout << "DAY 5 : " << endl;
+    cout << "test" << endl;
 }
 void daySix()
 {
     using namespace std;
     cout << "DAY 6 : " << endl;
+    cout << "test" << endl;
 }
 
 void daySeven()
 {
     using namespace std;
     cout << "DAY 7 : " << endl;
+    cout << "test" << endl;
 }
