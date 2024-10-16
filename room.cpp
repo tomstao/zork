@@ -3,9 +3,8 @@
 //
 #include "room.h"
 #include <iostream>
+using namespace std;
 void displayRoomDescription(int room) {
-    using namespace std;
-
     switch (room) {
     case 0:
         cout << "You are in a dark room. There is a door to the north." << endl;
