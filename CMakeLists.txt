@@ -14,4 +14,6 @@ add_executable(zork main.cpp
         textContent.h
         gameFuntions.cpp
         gameFuntions.h
+        status.cpp
+        status.h
 )
