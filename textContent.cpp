@@ -22,3 +22,11 @@ void printIntroduction2()
     cout << "You are one of the last humans, alone in a vast, empty city, " <<endl;
     cout << "where safety exists only in the daylight. But as night falls, survival is everything." <<endl;
 }
+
+void dayExploration()
+{
+    cout << "The player can explore various city locations: " << endl;
+    cout << "an old lab, a library, abandoned houses, and barricaded stores. "<< endl;
+    cout << "Each place holds clues, supplies, or remnants of humanity. "<< endl;
+    cout << "There are no enemies during the day, but there is always a sense of danger."<< endl;
+};

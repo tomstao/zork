@@ -12,4 +12,6 @@ add_executable(zork main.cpp
         invetory.h
         textContent.cpp
         textContent.h
+        gameFuntions.cpp
+        gameFuntions.h
 )

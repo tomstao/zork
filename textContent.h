@@ -6,6 +6,7 @@
 #define TEXTCONTENT_H
 void printIntroduction();
 void printIntroduction2();
+void dayExploration();
 
 
 // class textContent {
