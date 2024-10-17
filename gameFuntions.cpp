@@ -17,6 +17,7 @@ void nextNarration()
         clearInput();
     }
     clearInput();
+    cout << "****************************************************************************" << endl;
 }
 
 void clearInput()

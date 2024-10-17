@@ -50,7 +50,7 @@ void dayOne()
     cout << "You stretch and breathe in the stale air. Outside, the echoes of a long-lost world await. " <<endl;
     cout << "You gather your courage and prepare for your first venture into the dangerous streets." <<endl;
     nextNarration();
-    cout << "Explore the nearby area(Enter explore)." <<endl;
+    cout << "Pick up your key to drive to exploring the nearby area(Enter key)." <<endl;
     cout << "Gather initial supplies (Enter gather)." <<endl;
     cout << "Find clues about the virus outbreak (Enter lab)." <<endl;
     cout << "Send the radio message to the potential survivors.(Enter radio)" << endl;

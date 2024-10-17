@@ -36,7 +36,7 @@ int movePlayer(int currentMove, const string &command) {
 int dayOneChoice(string &command)
 {
     using namespace std;
-    if (command == "explore")
+    if (command == "key")
     {
         cout << "You found a supermarket nearby" << endl;
     }

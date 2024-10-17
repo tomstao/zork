@@ -42,3 +42,9 @@
 9	31	1729132131401726141	CMakeFiles/zork.dir/invetory.cpp.o	e567ba8286caaf10
 10	286	1729132131402020473	CMakeFiles/zork.dir/status.cpp.o	350a84e880fc66d9
 286	312	1729132131678274809	zork	d68b077e0daba23a
+5	412	1729202371530779883	CMakeFiles/zork.dir/textContent.cpp.o	6ffe7a28f92a070e
+5	412	1729202371530932133	CMakeFiles/zork.dir/gameFuntions.cpp.o	bacafcbff9af32f8
+5	413	1729202371530473424	CMakeFiles/zork.dir/command.cpp.o	d43f5497aa8c0d32
+413	510	1729202371938490025	zork	d68b077e0daba23a
+3	249	1729202393742739734	CMakeFiles/zork.dir/gameFuntions.cpp.o	bacafcbff9af32f8
+249	275	1729202393988487471	zork	d68b077e0daba23a
