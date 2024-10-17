@@ -4,4 +4,3 @@
 
 #include "invetory.h"
 
-int days {10};

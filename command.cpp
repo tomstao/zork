@@ -3,6 +3,7 @@
 //
 #include "command.h"
 #include <iostream>
+#include "status.h"
 
 void getCommand(string &command) {
     using namespace std;
@@ -51,6 +52,7 @@ int dayOneChoice(string &command)
     {
         cout << "You decide go to the port to send radio signal" << endl;
     }
+
     return 0;
 }
 

@@ -8,7 +8,9 @@ void displayRoomDescription(int room) {
 
     switch (room) {
     case 0:
-        cout << "You are in a dark room. There is a door to the north." << endl;
+        cout << "You awaken in a cramped bathroom," << endl;
+        cout << "the air thick with humidity. " << endl;
+
         break;
     case 1:
         cout << "You are in a hallway. There's a door to the south and a staircase leading up." << endl;

@@ -21,6 +21,7 @@ int main() {
     nextNarration();
     printIntroduction2();
     nextNarration();
+
     while (!gameWon) {
         dayExploration();
         displayRoomDescription(currentMove);
@@ -29,6 +30,8 @@ int main() {
         getCommand(dayOneCommand);
         dayOneChoice(dayOneCommand);
         nextNarration();
+        days = days - 1;
+        cout << days << endl;
 
         dayTwo();
         getCommand(dayTwoCommand);
