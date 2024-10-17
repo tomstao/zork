@@ -50,12 +50,12 @@ int main() {
         dayFiveChoice(dayFiveCommand);
         nextNarration();
 
-        daySixChoice(daySixCommand);
+        daySix();
         getCommand(daySixCommand);
         daySixChoice(daySixCommand);
         nextNarration();
 
-        daySevenChoice(daySevenCommand);
+        daySeven();
         getCommand(daySevenCommand);
         daySevenChoice(daySevenCommand);
         nextNarration();

@@ -5,7 +5,6 @@
 #include "textContent.h"
 #include "gameFuntions.h"
 #include <iostream>
-
 #include "command.h"
 
 void printIntroduction() {
@@ -42,7 +41,7 @@ void dayOne()
     using namespace std;
     cout << "DAY 1 : " << endl;
     cout << "Scene Description:" << endl;
-    cout << "You awaken in your dilapidated safehouse," << endl;
+    cout << "You awaken in your dilapidated safe-house," << endl;
     cout << "surrounded by remnants of a once-bustling city." << endl;
     cout << "Sunlight spills through the broken windows," << endl;
     cout << "giving you a moment of peace before the danger returns." << endl;
