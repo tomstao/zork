@@ -93,10 +93,16 @@ int dayOneChoice(string &command)
     }
     if (command == "radio")
     {   radio +=1;
-        cout << "You decide go to the port to send radio signal" << endl;
-        cout << "You walked to the empty dock, sent the signal again," << endl;
-        cout << "That's depressing, nobody answered you radio, " << endl;
-        cout << "maybe it's time to give up" << endl;
+        cout << "You grip the radio tightly, pressing the worn button as you speak into the cold silence,"
+                " your voice echoing faintly in the empty port. " << endl;
+        cout << "Static hums back at you, relentless and indifferent." << endl;
+        nextNarration();
+        cout << "You adjust the frequency, try again, sending out another call into the endless night.  " << endl;
+        cout << "But only the same empty hiss returns,"
+                " as if the whole world beyond has gone quiet, too far out of reach." << endl;
+        cout << "A sense of isolation settles over you, heavy and unyielding, as you let go of the button. " << endl;
+        cout << "The hope that someone—anyone—might answer slips further away,"
+                " leaving only the lonely rhythm of the static." << endl;
     }
 
     cout << "Night has fallen, and the streets lie in heavy silence "
@@ -192,7 +198,37 @@ int dayTwoChoice(string &command)
     }
     if(command == "radio")
     {
-        cout << "radio" << endl;
+        if(radio == 0)
+        {
+            cout << "You grip the radio tightly, pressing the worn button as you speak into the cold silence,"
+              " your voice echoing faintly in the empty port. " << endl;
+            cout << "Static hums back at you, relentless and indifferent." << endl;
+            nextNarration();
+            cout << "You adjust the frequency, try again, sending out another call into the endless night.  " << endl;
+            cout << "But only the same empty hiss returns,"
+                    " as if the whole world beyond has gone quiet, too far out of reach." << endl;
+            cout << "A sense of isolation settles over you, heavy and unyielding, as you let go of the button. " << endl;
+            cout << "The hope that someone—anyone—might answer slips further away,"
+                    " leaving only the lonely rhythm of the static." << endl;
+            nextNarration();
+        } else
+        {
+            radio += 1;
+            cout << "You sit by the old radio transmitter at the port,"
+                    " fingers trembling as you press the button and speak into the void. " << endl;
+            cout << "Static crackles in response, just like every other time—a frustrating wall of silence." << endl;
+            nextNarration();
+            cout << " The cold night air chills you, "
+                    "seeping through torn layers as you prepare to give up, shoulders sagging. " << endl;
+            cout << "Then, suddenly, a faint, broken voice cuts through the static,"
+                    " barely audible but unmistakably human." << endl;
+            nextNarration();
+            cout << " You freeze, hardly daring to breathe as the voice crackles back to life." << endl;
+            cout << "“Hello… anyone… there?”" << endl;
+            cout << "A wave of disbelief hits you, followed quickly by relief."
+                    " Someone heard you. You lean forward, fumbling to respond, your voice shaking with hope." << endl;
+        }
+        nextNarration();
     }
     if(command == "gather")
     {
