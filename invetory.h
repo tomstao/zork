@@ -12,7 +12,7 @@ extern int food;
 extern int cure;
 extern int radio;
 extern int days;
-
+extern bool weapon;
 extern std::string dayOneCommand;
 extern std::string dayTwoCommand;
 extern std::string dayThreeCommand;

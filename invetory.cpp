@@ -10,6 +10,7 @@ int food = 3;
 int cure = 0;
 int radio = 0;
 int days{3};
+bool weapon = false;
 std::string dayOneCommand = "place holder";
 std::string dayTwoCommand;
 std::string dayThreeCommand;
