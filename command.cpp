@@ -46,7 +46,7 @@ int dayOneChoice(string &command)
     {
         key = true;
         gas -= 1;
-        food += 1;
+        food += 2;
         cout << "You raided a supermarket in the middle of the town." << endl;
         cout << "You gathered a lot of food, next, you should gather some more gas here." << endl;
         cout << "But, searching gas will cause to go back home when night falls, that's dangerous." << endl;
@@ -70,7 +70,7 @@ int dayOneChoice(string &command)
                 cout << "After you gathered enough gas, you decided to sleep in car," << endl;
                 cout << "if anything happens, you just drive your car and run away." << endl;
                 cout << "Luckily, you didn't encounter any danger, safely drove back home" << endl;
-                gas += 2;
+                gas += 3;
             }
 
         }
@@ -79,7 +79,7 @@ int dayOneChoice(string &command)
     if (command == "gather")
     {
         food += 1;
-        gas += 2;
+        gas += 1;
         cout << "You found some food and supplies, not too much, but with the remained gas, " << endl;
         cout << "and the gas you gathered from abandoned cars," << endl;
         cout << "You are able to drive to another city with potential survivors." << endl;
@@ -113,13 +113,23 @@ int dayOneChoice(string &command)
     nextNarration();
     cout  << "The day’s tension seeps from your body, but you know the respite is only temporary." << endl;
 
-
-
     return 0;
 }
 
 int dayTwoChoice(string &command)
 {
+    bool weaponChoice = false;
+    if (food >= 5 && gas >= 5)
+    {
+        cout << "With enough gas, you are able to drive further where you know there is a weapon store" << endl;
+        cout << "Maybe you can find some weapons for later escaping or you should act safely?" << endl;
+        weaponChoice = true;
+    }
+    cout << "What would you want to do?" << endl;
+    cout << "Continue searching resources-- enter 'search' " << endl;
+    cout << "Try to check the radio one last time-- enter 'radio' " << endl;
+    cout << "Do the vaccine research one last time-- enter 'lab'" << endl;
+
     return 0;
 }
 
