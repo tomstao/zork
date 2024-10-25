@@ -80,9 +80,21 @@ int dayOneChoice(string &command)
     {
         food += 1;
         gas += 1;
-        cout << "You found some food and supplies, not too much, but with the remained gas, " << endl;
-        cout << "and the gas you gathered from abandoned cars," << endl;
-        cout << "You are able to drive to another city with potential survivors." << endl;
+        cout << "Determined and focused, you move through the ruins of nearby buildings, " << endl;
+        cout << "scavenging anything that could help with the journey ahead. " << endl;
+        cout << "Each step is careful, every rustle and shadow "
+                "inspected before you enter abandoned shops and homes," << endl;
+        nextNarration();
+        cout << " scanning shelves stripped bare yet hoping to find a"
+                " few overlooked cans or a forgotten bottle of water." << endl;
+        cout << "You add each item to your pack, feeling the weight grow—a mix of food, a spare flashlight,"
+                " a map with the nearest city circled in red." <<endl;
+        cout << "Every resource you gather feels like a small victory,"
+                " a step closer to leaving this desolate place." <<endl;
+        nextNarration();
+        cout << " As you make your way back to your hideout, you can almost picture the road ahead," <<endl;
+        cout << "and a flicker of hope begins to kindle in the face of the risks waiting in the unknown." <<endl;
+        nextNarration();
     }
     if (command == "lab")
     {
@@ -183,6 +195,7 @@ int dayTwoChoice(string &command)
     }
     if(command == "lab")
     {
+
         cout << "Exhausted and on the edge of despair, you slump over the lab table," << endl;
         cout << "papers scattered and notebooks filled with dead ends and failures." << endl;
         nextNarration();
@@ -230,21 +243,74 @@ int dayTwoChoice(string &command)
         }
         nextNarration();
     }
-    if(command == "gather")
+    if (food <= 4)
     {
-        cout << "gather" << endl;
-    }
-    cout << "The world is draped in shadows as you finally make it back to the familiar, "
-        "weathered door of your refuge." << endl;
-    cout  << "Exhaustion weighs heavy in your limbs,"
-             " each bruise and scrape reminding you of the close calls that filled the day." << endl;
-    cout << " You slip inside, securing every lock and bolt with practiced hands, " << endl;
-    nextNarration();
-    cout << "shutting out the dangers that lurk in the darkened streets. " << endl;
-    cout << ". The silence that greets you is thick but comforting. " << endl;
-    cout << "You lean back against the door,"
-            " taking a moment to let the tension drain from your body. Another day survived." << endl;
+        if(command == "gather")
+        {
+            if(food <= 3)
+            {
+                food += 1;
+                gas += 1;
+                cout << "Determined and focused, you move through the ruins of nearby buildings, " << endl;
+                cout << "scavenging anything that could help with the journey ahead. " << endl;
+                cout << "Each step is careful, every rustle and shadow "
+                        "inspected before you enter abandoned shops and homes," << endl;
+                nextNarration();
+                cout << " scanning shelves stripped bare yet hoping to find a"
+                        " few overlooked cans or a forgotten bottle of water." << endl;
+                cout << "You add each item to your pack, feeling the weight grow—a mix of food, a spare flashlight,"
+                        " a map with the nearest city circled in red." <<endl;
+                cout << "Every resource you gather feels like a small victory,"
+                        " a step closer to leaving this desolate place." <<endl;
+                nextNarration();
+                cout << " As you make your way back to your hideout, you can almost picture the road ahead," <<endl;
+                cout << "and a flicker of hope begins to kindle in the face of the risks waiting in the unknown." <<endl;
+                nextNarration();
+            }
+            else if (food > 3)
+            {
+                food += 1;
+                gas += 1;
 
+                cout << "You glance at your dwindling supplies, knowing it won’t be enough for the journey ahead." << endl;
+                cout << " The road to the next city is long and uncertain, and without more food and gas," << endl;
+                cout << "the attempt would be suicide. " << endl;
+                nextNarration();
+                cout << " You push further into the outskirts, scanning for any gas stations, " << endl;
+                cout << " abandoned cars, or stores that might still hold something useful. " << endl;
+                nextNarration();
+                cout << " The few cans of food in your pack clink together, feeling pathetically light." << endl;
+                cout << " You approach a rusted car and pry open the fuel cap, " << endl;
+                nextNarration();
+                cout << " hoping against hope as you siphon the dregs of gas into a small canister." << endl;
+                cout << " The process is painstaking and yields little, but every drop counts." << endl;
+                cout << " With each find, your plan becomes a little more real,"
+                        " even if survival remains a distant, fragile hope." << endl;
+            }
+        }
+    }
+    // cout << "The world is draped in shadows as you finally make it back to the familiar, "
+    //     "weathered door of your refuge." << endl;
+    // cout  << "Exhaustion weighs heavy in your limbs,"
+    //          " each bruise and scrape reminding you of the close calls that filled the day." << endl;
+    // cout << " You slip inside, securing every lock and bolt with practiced hands, " << endl;
+    // nextNarration();
+    // cout << "shutting out the dangers that lurk in the darkened streets. " << endl;
+    // cout << ". The silence that greets you is thick but comforting. " << endl;
+    // cout << "You lean back against the door,"
+    //         " taking a moment to let the tension drain from your body. Another day survived." << endl;
+
+    cout << "As you return to your hideout under the cover of dusk, an uneasy feeling stirs." << endl;
+    cout << "Scratches mark the walls outside, fresh and deep, trailing toward your front door. " << endl;
+    cout << "Bits of dirt and debris are scattered near the entrance,"
+            " and faint footprints—shuffling and dragging—lead ominously away from the building." << endl;
+    nextNarration();
+    cout << " The realization hits you like a punch to the gut: they’ve found you." << endl;
+    cout << " Anxiety tightens your chest as you glance around, the familiar surroundings now feeling like a trap." << endl;
+    nextNarration();
+    cout << " There’s no choice left; by tomorrow, you’ll have to be gone." << endl;
+    cout << " You retreat inside, packing with urgency, knowing tonight is your last in what was once a place of safety." << endl;
+    nextNarration();
     return 0;
 }
 

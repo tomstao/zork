@@ -81,21 +81,26 @@ void dayTwo()
         cout << "Maybe you can find some weapons for later escaping or you should act safely?" << endl;
         weaponChoice = true;
     }
+    cout << "What would you want to do?" << endl;
+
     if(weaponChoice)
     {
         cout << "Drive to the upper town, there might have weapon, but it could be dangerous"
                 "-- enter 'weapon' " << endl;
     }
-    cout << "What would you want to do?" << endl;
-    cout << "Continue searching resources-- enter 'search' " << endl;
     cout << "Try to check the radio one last time-- enter 'radio' " << endl;
     cout << "Do the vaccine research one last time-- enter 'lab'" << endl;
-
+    if (food < 5)
+    cout << "In order to escape to another city, you need to gather more food and gas-- enter 'gather' " << endl;
 }
 void dayThree()
 {
     using namespace std;
     cout << "DAY 3 : " << endl;
+    if(cure >= 2)
+    {
+
+    }
     cout << "test" << endl;
 }
 

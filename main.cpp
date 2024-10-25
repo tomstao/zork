@@ -47,8 +47,7 @@ int main() {
         {
             cin >> dayTwoCommand;
             clearInput();
-        } while (dayTwoCommand== "weapon" && weaponChoice == false
-            && dayTwoCommand != "lab" && "radio" && "lab");
+        } while (dayTwoCommand != "weapon" && dayTwoCommand != "gather" && "radio" && "lab");
         dayTwoChoice(dayTwoCommand);
         nextNarration();
         if (alive == false)
