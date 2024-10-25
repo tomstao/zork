@@ -61,7 +61,16 @@ void dayTwo()
 {
     using namespace std;
     cout << "DAY 2 : " << endl;
-    cout << "test" << endl;
+    cout << "You wake with a start, the faint light of dawn filtering through the barricaded windows." << endl;
+    cout << "The room is silent, save for the soft ticking of the clock on the wall." << endl;
+    nextNarration();
+    cout << "Your body aches from yesterday’s ordeal," << endl;
+    cout << " a dull reminder of the dangers lurking outside. " << endl;
+    nextNarration();
+    cout << " The stale air hangs heavy, and your stomach twists with hunger." << endl;
+    cout << "Another day in a world that barely feels alive—yet you must face it again," << endl;
+    cout << " before the sun dips and the night returns." << endl;
+
 }
 void dayThree()
 {

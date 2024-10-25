@@ -46,7 +46,7 @@ int dayOneChoice(string &command)
     {
         key = true;
         gas -= 1;
-        food += 3;
+        food += 1;
         cout << "You raided a supermarket in the middle of the town." << endl;
         cout << "You gathered a lot of food, next, you should gather some more gas here." << endl;
         cout << "But, searching gas will cause to go back home when night falls, that's dangerous." << endl;
@@ -60,7 +60,7 @@ int dayOneChoice(string &command)
         if (stay == "stay")
         {   srand(time(0));
             int chance = rand() % 100;
-            if (chance < 40)
+            if (chance < 45)
             {
                 cout << "Your noise attracted the zombies, you got bitten, that's the end of your life." << endl;
                 alive = false;
@@ -79,7 +79,9 @@ int dayOneChoice(string &command)
     if (command == "gather")
     {
         food += 1;
-        cout << "You found some food and supplies, not too much, but with the remained gas," << endl;
+        gas += 2;
+        cout << "You found some food and supplies, not too much, but with the remained gas, " << endl;
+        cout << "and the gas you gathered from abandoned cars," << endl;
         cout << "You are able to drive to another city with potential survivors." << endl;
     }
     if (command == "lab")

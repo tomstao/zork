@@ -33,7 +33,7 @@ int main() {
             clearInput();
         }
         while(dayOneCommand != "key" && dayOneCommand != "gather" &&
-            dayOneCommand != "exit" && dayOneCommand != "lab");
+            dayOneCommand != "radio" && dayOneCommand != "lab");
         dayOneChoice(dayOneCommand);
         nextNarration();
         days = days - 1;
