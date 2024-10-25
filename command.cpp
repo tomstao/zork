@@ -98,6 +98,23 @@ int dayOneChoice(string &command)
         cout << "That's depressing, nobody answered you radio, " << endl;
         cout << "maybe it's time to give up" << endl;
     }
+
+    cout << "Night has fallen, and the streets lie in heavy silence "
+            "as you slip back toward the safety of your makeshift "
+            "fortress. " << endl;
+    cout << "Every shadow looms large, and every distant rustle keeps "
+            "your pulse racing until the familiar sight of your "
+            "front door finally comes into view." << endl;
+    nextNarration();
+    cout << "You press your back against it, take a steadying breath, "
+            "and listen for any sounds from within—only silence." <<endl;
+    cout << "With a last glance over your shoulder, you slide the bolts shut, "
+            "sealing yourself away from the dangers lurking in the darkness. " << endl;
+    nextNarration();
+    cout  << "The day’s tension seeps from your body, but you know the respite is only temporary." << endl;
+
+
+
     return 0;
 }
 
