@@ -6,6 +6,7 @@
 #define COMMAND_H
 #include <string>
 using namespace std;
+extern bool alive;
 
 void getCommand(string &command);
 int movePlayer(int currentMove, const string &command);

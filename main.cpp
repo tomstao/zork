@@ -27,11 +27,20 @@ int main() {
         displayRoomDescription(currentMove);
 
         dayOne();
-        getCommand(dayOneCommand);
+        do
+        {
+            cin >> dayOneCommand;
+            clearInput();
+        }
+        while(dayOneCommand != "key" && dayOneCommand != "gather" &&
+            dayOneCommand != "exit" && dayOneCommand != "lab");
         dayOneChoice(dayOneCommand);
         nextNarration();
         days = days - 1;
-        cout << days << endl;
+        if (alive == false)
+            break;
+
+        cout << days << " left." << endl;
 
         dayTwo();
         getCommand(dayTwoCommand);
@@ -70,6 +79,10 @@ int main() {
         if (isGameOver(currentMove)) {
             gameWon = true;
         }
+    }
+    if (alive == false)
+    {
+        cout << "GAME OVER" << endl;
     }
 
     cout << "Congratulations! You've completed the game!" << endl;

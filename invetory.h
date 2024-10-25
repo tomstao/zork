@@ -6,10 +6,13 @@
 #define INVETORY_H
 
 
+extern bool key;
+extern int gas;
+extern int food;
+extern int cure;
+extern int radio;
+extern int days;
 
-class invetory {
-
-};
 
 
 

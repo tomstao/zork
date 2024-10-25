@@ -48,7 +48,7 @@ void dayOne()
     nextNarration();
     cout << "Narration:" <<endl;
     cout << "You stretch and breathe in the stale air. Outside, the echoes of a long-lost world await. " <<endl;
-    cout << "The life line has been shut down long ago, your resources can only support you three days from now." <<endl;
+    cout << "The life line has been shut down long ago, stay here any longer only causes resources wasting." <<endl;
     cout << "You've decide no matter what happens, you are going to leave in three days" << endl;
     nextNarration();
     cout << "Pick up your key to drive to exploring the nearby area(Enter key)." <<endl;

@@ -4,3 +4,9 @@
 
 #include "invetory.h"
 
+bool key = false;
+int  gas = 3;
+int food = 5;
+int cure = 0;
+int radio = 0;
+int days{3};

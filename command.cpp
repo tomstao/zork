@@ -3,13 +3,19 @@
 //
 #include "command.h"
 #include <iostream>
+#include "gameFuntions.h"
 #include "status.h"
+#include "invetory.h"
+#include <ctime>
+#include <cstdlib>
 
 void getCommand(string &command) {
     using namespace std;
     cout << "> ";
     getline(cin, command);
 }
+     string stay = "stay";
+bool alive = true;
 
 
 int movePlayer(int currentMove, const string &command) {
@@ -38,21 +44,58 @@ int dayOneChoice(string &command)
     using namespace std;
     if (command == "key")
     {
-        cout << "You found a supermarket nearby" << endl;
+        key = true;
+        gas -= 1;
+        food += 3;
+        cout << "You raided a supermarket in the middle of the town." << endl;
+        cout << "You gathered a lot of food, next, you should gather some more gas here." << endl;
+        cout << "But, searching gas will cause to go back home when night falls, that's dangerous." << endl;
+        cout << "Enter 'stay' or 'back'" << endl;
+        do
+        {
+            cin >> stay;
+            clearInput();
+        } while (stay != "stay" && stay != "back");
+
+        if (stay == "stay")
+        {   srand(time(0));
+            int chance = rand() % 100;
+            if (chance < 40)
+            {
+                cout << "Your noise attracted the zombies, you got bitten, that's the end of your life." << endl;
+                alive = false;
+            }
+            else
+            {
+                cout << "After you gathered enough gas, you decided to sleep in car," << endl;
+                cout << "if anything happens, you just drive your car and run away." << endl;
+                cout << "Luckily, you didn't encounter any danger, safely drove back home" << endl;
+                gas += 2;
+            }
+
+        }
+
     }
     if (command == "gather")
     {
-        cout << "You found food and supplies" << endl;
+        food += 1;
+        cout << "You found some food and supplies, not too much, but with the remained gas," << endl;
+        cout << "You are able to drive to another city with potential survivors." << endl;
     }
     if (command == "lab")
     {
+        cure += 1;
         cout << "You walk into the  laboratory under your basement" << endl;
+        cout << "The mouse you did experiment on didn't show any cured sign." << endl;
+        cout << "That's depressing, maybe it's time to give up" << endl;
     }
     if (command == "radio")
-    {
+    {   radio +=1;
         cout << "You decide go to the port to send radio signal" << endl;
+        cout << "You walked to the empty dock, sent the signal again," << endl;
+        cout << "That's depressing, nobody answered you radio, " << endl;
+        cout << "maybe it's time to give up" << endl;
     }
-
     return 0;
 }
 

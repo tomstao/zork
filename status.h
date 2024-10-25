@@ -7,10 +7,7 @@
 #include <string>
 
 extern int end[3];
-extern int radio;
-extern int food;
 extern int health;
-extern int days;
 
 extern std::string dayOneCommand;
 extern std::string dayTwoCommand;
