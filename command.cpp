@@ -191,11 +191,10 @@ int dayTwoChoice(string &command)
         }
 
 
-
     }
     if(command == "lab")
     {
-
+        cure += 1;
         cout << "Exhausted and on the edge of despair, you slump over the lab table," << endl;
         cout << "papers scattered and notebooks filled with dead ends and failures." << endl;
         nextNarration();

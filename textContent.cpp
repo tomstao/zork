@@ -82,6 +82,7 @@ void dayTwo()
         weaponChoice = true;
     }
     cout << "What would you want to do?" << endl;
+    nextNarration();
 
     if(weaponChoice)
     {
@@ -95,13 +96,55 @@ void dayTwo()
 }
 void dayThree()
 {
+    string choice = "placeholder";
     using namespace std;
     cout << "DAY 3 : " << endl;
-    if(cure >= 2)
+    if(cure >= 2 )
     {
-
+        cout << " The sunlight filters into your makeshift lab, a harsh reminder that time is slipping away. " << endl;
+        cout << " The vial rests before you, containing the last threads of hope—but it’s raw, unrefined." << endl;
+        cout << " You don't have more time to waste, maybe to carry the unrefined vaccine and escape is a better option"
+                "what would you do?" << endl;
+        nextNarration();
+        cout << R"(enter "refine" or "escape")" << endl;
+        do
+        {
+            cin >> choice;
+            clearInput();
+        } while (choice != "refine" && choice != "escape");
+        if (choice == "refine")
+        {
+            cout << " Your hands move with urgency, setting up the extraction equipment, " << endl;
+            cout << " carefully measuring each step as you work against the creeping shadow of the coming dusk. " << endl;
+            nextNarration();
+            cout << " Outside, you hear the occasional distant groan, "
+                    " a chilling reminder of what awaits if you don’t finish in time." << endl;
+            cout << " Sweat beads on your forehead as the minutes tick by," << endl;
+            cout << " and finally, the last drop filters through, clear and potent. " << endl;
+            nextNarration();
+            cout << " You seal the syringe, tuck it safely in your bag," << endl;
+            cout << " and take one last look at the room before stepping into the daylight." << endl;
+            cout << " There’s no more time—the night will soon bring them back, and you must be gone before then." << endl;
+            nextNarration();
+        }
+        if (choice == "escape")
+        {
+            nextNarration();
+            cout << " You stare at the vial, knowing it’s unrefined, incomplete." << endl;
+            cout << "  But the approaching shadows and distant, echoing moans make the choice clear:" << endl;
+            cout << " there’s no time. You slip the raw vaccine carefully into your pack,"
+                    " hoping it holds the potential to turn the tide" << endl;
+            nextNarration();
+            cout << " —even if it’s untested. Heart pounding, you gather your remaining supplies, "
+                    "feeling the weight of this desperate gamble. " << endl;
+            cout << " As you step into the fading daylight, you clutch your pack tightly, nerves taut." << endl;
+            nextNarration();
+            cout << " The sun is already beginning its descent; nightfall—and the undead—are only hours away." << endl;
+            cout << " There’s no room for hesitation now. With one last glance at your abandoned hideout, " << endl;
+            cout << "  you turn and make for the open road, carrying both hope and uncertainty on your back." << endl;
+            nextNarration();
+        }
     }
-    cout << "test" << endl;
 }
 
 void dayFour()
