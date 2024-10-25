@@ -60,7 +60,7 @@ int dayOneChoice(string &command)
         if (stay == "stay")
         {   srand(time(0));
             int chance = rand() % 100;
-            if (chance < 10)
+            if (chance < 5)
             {
                 cout << "Your noise attracted the zombies, you got bitten, that's the end of your life." << endl;
                 alive = false;
@@ -145,7 +145,7 @@ int dayTwoChoice(string &command)
         if (choice == "search")
         {
             int chance = rand() % 100;
-            if (chance < 90)
+            if (chance < 10)
             {
                 cout << "The shuffling grows louder, closer. You freeze, but it’s too late—a pale, "
                         "decomposing face rises from behind the shelf, hollow eyes locking onto you." << endl;
@@ -188,6 +188,7 @@ int dayTwoChoice(string &command)
         cout << "You blink, hardly daring to believe it. Heart pounding, you lean closer. Could it be? " << endl;
         cout << "Amidst all the failures, "
                 "this one resilient creature might just hold the answer you’ve been searching for." << endl;
+        nextNarration();
     }
     if(command == "radio")
     {
