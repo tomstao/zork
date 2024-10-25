@@ -43,25 +43,25 @@ int main() {
         dayThreeChoice(dayThreeCommand);
         nextNarration();
 
-        dayFour();
-        getCommand(dayFourCommand);
-        dayFourChoice(dayFourCommand);
-        nextNarration();
-
-        dayFive();
-        getCommand(dayFiveCommand);
-        dayFiveChoice(dayFiveCommand);
-        nextNarration();
-
-        daySix();
-        getCommand(daySixCommand);
-        daySixChoice(daySixCommand);
-        nextNarration();
-
-        daySeven();
-        getCommand(daySevenCommand);
-        daySevenChoice(daySevenCommand);
-        nextNarration();
+        // dayFour();
+        // getCommand(dayFourCommand);
+        // dayFourChoice(dayFourCommand);
+        // nextNarration();
+        //
+        // dayFive();
+        // getCommand(dayFiveCommand);
+        // dayFiveChoice(dayFiveCommand);
+        // nextNarration();
+        //
+        // daySix();
+        // getCommand(daySixCommand);
+        // daySixChoice(daySixCommand);
+        // nextNarration();
+        //
+        // daySeven();
+        // getCommand(daySevenCommand);
+        // daySevenChoice(daySevenCommand);
+        // nextNarration();
 
 
         getCommand(command);

@@ -29,7 +29,7 @@ void printIntroduction2()
 void dayExploration()
 {
     using namespace std;
-    cout << "The player can explore various city locations: " << endl;
+    cout << "You can explore various city locations: " << endl;
     cout << "an old lab, a library, abandoned houses, and barricaded stores. "<< endl;
     cout << "Each place holds clues, supplies, or remnants of humanity."<< endl;
     cout << "There are no enemies during the day, but there is always a sense of danger."<< endl;
@@ -48,12 +48,13 @@ void dayOne()
     nextNarration();
     cout << "Narration:" <<endl;
     cout << "You stretch and breathe in the stale air. Outside, the echoes of a long-lost world await. " <<endl;
-    cout << "You gather your courage and prepare for your first venture into the dangerous streets." <<endl;
+    cout << "The life line has been shut down long ago, your resources can only support you three days from now." <<endl;
+    cout << "You've decide no matter what happens, you are going to leave in three days" << endl;
     nextNarration();
     cout << "Pick up your key to drive to exploring the nearby area(Enter key)." <<endl;
-    cout << "Gather initial supplies (Enter gather)." <<endl;
-    cout << "Find clues about the virus outbreak (Enter lab)." <<endl;
-    cout << "Send the radio message to the potential survivors.(Enter radio)" << endl;
+    cout << "Gather initial supplies without driving your car in order to save gas.(Enter gather)." <<endl;
+    cout << "Try to catch the last hope in your basement lab to find clues about the virus outbreak (Enter lab)." <<endl;
+    cout << "To check the radio one last time at the dock.(Enter radio)" << endl;
 }
 
 void dayTwo()
