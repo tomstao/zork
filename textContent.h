@@ -14,6 +14,7 @@ void dayFour();
 void dayFive();
 void daySix();
 void daySeven();
+extern bool weaponChoice;
 
 
 // class textContent {

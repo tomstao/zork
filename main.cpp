@@ -43,7 +43,10 @@ int main() {
         cout << days << " left." << endl;
 
         dayTwo();
-        getCommand(dayTwoCommand);
+        do
+        {
+            cin >> dayTwoCommand;
+        } while (dayTwoCommand!= "weapon" && weaponChoice == false && dayTwoCommand != "lab" && "radio" && "lab");
         dayTwoChoice(dayTwoCommand);
         nextNarration();
 

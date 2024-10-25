@@ -6,6 +6,10 @@
 #include "gameFuntions.h"
 #include <iostream>
 #include "command.h"
+#include "invetory.h"
+#include "status.h"
+bool weaponChoice = false;
+
 
 void printIntroduction() {
     using namespace std;
@@ -70,6 +74,22 @@ void dayTwo()
     cout << " The stale air hangs heavy, and your stomach twists with hunger." << endl;
     cout << "Another day in a world that barely feels alive—yet you must face it again," << endl;
     cout << " before the sun dips and the night returns." << endl;
+
+    if (food >= 5 && gas >= 5)
+    {
+        cout << "With enough gas, you are able to drive further where you know there is a weapon store" << endl;
+        cout << "Maybe you can find some weapons for later escaping or you should act safely?" << endl;
+        weaponChoice = true;
+    }
+    if(weaponChoice)
+    {
+        cout << "Drive to the upper town, there might have weapon, but it could be dangerous"
+                "-- enter 'weapon' " << endl;
+    }
+    cout << "What would you want to do?" << endl;
+    cout << "Continue searching resources-- enter 'search' " << endl;
+    cout << "Try to check the radio one last time-- enter 'radio' " << endl;
+    cout << "Do the vaccine research one last time-- enter 'lab'" << endl;
 
 }
 void dayThree()

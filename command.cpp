@@ -60,7 +60,7 @@ int dayOneChoice(string &command)
         if (stay == "stay")
         {   srand(time(0));
             int chance = rand() % 100;
-            if (chance < 45)
+            if (chance < 10)
             {
                 cout << "Your noise attracted the zombies, you got bitten, that's the end of your life." << endl;
                 alive = false;
@@ -118,17 +118,22 @@ int dayOneChoice(string &command)
 
 int dayTwoChoice(string &command)
 {
-    bool weaponChoice = false;
-    if (food >= 5 && gas >= 5)
+    if(command == "weapon")
     {
-        cout << "With enough gas, you are able to drive further where you know there is a weapon store" << endl;
-        cout << "Maybe you can find some weapons for later escaping or you should act safely?" << endl;
-        weaponChoice = true;
+        cout << "weapon" << endl;
     }
-    cout << "What would you want to do?" << endl;
-    cout << "Continue searching resources-- enter 'search' " << endl;
-    cout << "Try to check the radio one last time-- enter 'radio' " << endl;
-    cout << "Do the vaccine research one last time-- enter 'lab'" << endl;
+    if(command == "lab")
+    {
+        cout << "lab" << endl;
+    }
+    if(command == "radio")
+    {
+        cout << "radio" << endl;
+    }
+    if(command == "gather")
+    {
+        cout << "gather" << endl;
+    }
 
     return 0;
 }

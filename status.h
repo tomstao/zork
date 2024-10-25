@@ -9,13 +9,6 @@
 extern int end[3];
 extern int health;
 
-extern std::string dayOneCommand;
-extern std::string dayTwoCommand;
-extern std::string dayThreeCommand;
-extern std::string dayFourCommand;
-extern std::string dayFiveCommand;
-extern std::string daySixCommand;
-extern std::string daySevenCommand;
 
 
 // class status {
