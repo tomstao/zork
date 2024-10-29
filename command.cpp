@@ -60,7 +60,7 @@ int dayOneChoice(string &command)
         if (stay == "stay")
         {   srand(time(0));
             int chance = rand() % 100;
-            if (chance < 5)
+            if (chance < 30)
             {
                 cout << "Your noise attracted the zombies, you got bitten, that's the end of your life." << endl;
                  return alive = false;
@@ -157,8 +157,10 @@ int dayTwoChoice(string &command)
         } while (choice != "search" && choice != "back");
         if (choice == "search")
         {
+            srand(time(0));
             int chance = rand() % 100;
-            if (chance < 10)
+            cout << "chance: " << chance << endl;
+            if (chance < 35)
             {
                 cout << "The shuffling grows louder, closer. You freeze, but it’s too late—a pale, "
                         "decomposing face rises from behind the shelf, hollow eyes locking onto you." << endl;
@@ -355,7 +357,8 @@ int dayTwoChoice(string &command)
 
     if ( option == "raid" )
     {
-        if (int chance = rand() % 100; chance < 10 )
+        srand(time(NULL));
+        if (int chance = rand() % 100; chance < 40 )
         {
             cout << "Determined, you slip into the night, hoping to reach the police department undetected." << endl;
             cout << "The silence is thick, every step a reminder of the danger around you." << endl;

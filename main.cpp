@@ -90,7 +90,7 @@ int main() {
     }
     if (alive == false)
     {
-        cout << "GAME OVER" << endl;
+        cout << "GAME OVER!" << endl;
     }
     else
     {
