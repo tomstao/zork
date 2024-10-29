@@ -4,7 +4,6 @@
 #include "command.h"
 #include <iostream>
 #include "gameFuntions.h"
-#include "status.h"
 #include "invetory.h"
 #include <ctime>
 #include <cstdlib>
@@ -47,9 +46,17 @@ int dayOneChoice(string &command)
         key = true;
         gas -= 1;
         food += 2;
-        cout << "You raided a supermarket in the middle of the town." << endl;
-        cout << "You gathered a lot of food, next, you should gather some more gas here." << endl;
-        cout << "But, searching gas will cause to go back home when night falls, that's dangerous." << endl;
+        cout << "You slip into the deserted supermarket in the heart of town,"
+                " the eerie silence pressing in as you navigate the dim aisles." << endl;
+        cout << "Your pack grows heavier with cans and dried food,"
+                " enough to last for days—more than you could have hoped for." << endl;
+        cout << "But you know it’s not enough."
+                " To make the journey out of this city, you'll need fuel, and the gas station is a few blocks over." << endl;
+        nextNarration();
+        cout << "A cold realization settles over you; "
+                "searching for gas will mean risking the streets, cutting it close to nightfall." << endl;
+        cout << "And once the sun dips below the horizon,"
+                " making it back safely will be almost impossible." << endl;
         cout << "Enter 'stay' or 'back'" << endl;
         do
         {
@@ -62,12 +69,23 @@ int dayOneChoice(string &command)
             int chance = rand() % 100;
             if (chance < 30)
             {
-                cout << "Your noise attracted the zombies, you got bitten, that's the end of your life." << endl;
+                cout << "The faint shuffle of footsteps behind you grows louder, your heart pounding as you realize—your noise has drawn them in." << endl;
+                cout << "Zombies close in from every side, their cold,"
+                        " lifeless eyes fixed on you, and before you can react, decaying hands reach out, grabbing at your arms and shoulders." << endl;
+                cout << "A sharp, searing pain cuts through you as teeth sink into your skin,"
+                        " and a chilling numbness spreads through your veins." << endl;
+                cout << "As darkness overtakes you, you know—this is the end." << endl;
                  return alive = false;
             }
-            cout << "After you gathered enough gas, you decided to sleep in car," << endl;
-            cout << "if anything happens, you just drive your car and run away." << endl;
-            cout << "Luckily, you didn't encounter any danger, safely drove back home" << endl;
+            cout << "With enough gas finally gathered, "
+                    "you settle into the driver’s seat, exhaustion weighing heavily on you." << endl;
+            cout << "You decide to sleep in the car,"
+                    " ready to hit the gas at the first sign of danger, every nerve on edge." << endl;
+            cout << "Hours pass quietly, the night pressing in around you,"
+                    " but no sounds stir beyond the windows." << endl;
+            cout << "As dawn breaks, you start the engine,"
+                    " relieved, and safely drive back home, grateful to have made it through unscathed." << endl;
+            nextNarration();
             gas += 3;
         }
 

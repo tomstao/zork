@@ -7,7 +7,6 @@
 #include <iostream>
 #include "command.h"
 #include "invetory.h"
-#include "status.h"
 bool weaponChoice = false;
 
 

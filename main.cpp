@@ -1,12 +1,9 @@
 #include <iostream>
 #include <string>
-#include "room.h"
 #include "command.h"
 #include "gameFuntions.h"
 #include "invetory.h"
 #include "textContent.h"
-#include <cstdlib>
-#include "status.h"
 
 
 // Function declarations
@@ -23,7 +20,6 @@ int main() {
 
     while (alive) {
         dayExploration();
-        displayRoomDescription(currentMove);
 
         dayOne();
         do
