@@ -216,6 +216,46 @@ void dayThree()
             cout << endl;
             alive = false;
     }
+        if (gas == 4 && cure <2 && radio < 2 && weapon == true)
+        {
+                cout << "You linger in the empty lab,"
+                        " surrounded by notes and equipment that promised answers but yielded none." << endl;
+                cout << "The radio sits silent in the corner,"
+                        " mocking the weeks of broadcasts you sent out to an empty world." << endl;
+                cout << "The unrefined vaccine glints under the harsh lab light—a formula that"
+                        " never quite came together, "
+                        "a hope that never materialized." << endl;
+                nextNarration();
+                cout << "With a heavy heart, "
+                        "you gather the last of your supplies,"
+                        " knowing you've tried everything." << endl;
+                cout << "As you step out of the hideout for the last time,"
+                        " a strange calm settles over you." << endl;
+                nextNarration();
+                cout << "The road ahead is uncertain, but it’s the only path left." << endl;
+                cout << "Casting one final glance back, you turn your back on the lab, "
+                        "the radio, and the empty streets, determined to survive,"
+                        " even if hope has taken a different shape." << endl;
+                cout << "You walk away, leaving behind a world of unanswered questions,"
+                        " choosing to face whatever lies beyond." << endl;
+
+        } else if (gas == 4 && cure <2 && radio < 2 && weapon == false)
+        {
+                cout << "You take one last look at the empty lab,"
+                        " surrounded by notes and equipment that once held the promise of answers." << endl;
+                cout << "The silent radio sits abandoned,"
+                        " a reminder of all the calls for help that went unanswered." << endl;
+                cout << "With supplies packed, "
+                        "you step out of the hideout, hoping the cover of night will give you the chance to slip away." << endl;
+                nextNarration();
+                cout << "But as you move through the darkened streets, shadows begin to stir, and dread fills you—without a weapon, you're vulnerable." << endl;
+                cout << "Zombies emerge, closing in from every direction, drawn by the sound of your steps, and panic seizes you." << endl;
+                cout << "You try to run, but the horde is relentless, their cold, lifeless hands reaching out, pulling you down." << endl;
+                nextNarration();
+                cout << "In the end, survival slipped away, and the silent radio and abandoned lab fade into darkness, along with your final chance." << endl;
+                cout << endl;
+                alive = false;
+        }
 
 }
 

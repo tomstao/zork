@@ -22,7 +22,7 @@ int main() {
     printIntroduction2();
     nextNarration();
 
-    while (!gameWon) {
+    while (alive) {
         dayExploration();
         displayRoomDescription(currentMove);
 
@@ -65,6 +65,7 @@ int main() {
         // } while ();
         dayThreeChoice(dayThreeCommand);
         nextNarration();
+        break;
 
         // dayFour();
         // getCommand(dayFourCommand);
@@ -85,8 +86,7 @@ int main() {
         // getCommand(daySevenCommand);
         // daySevenChoice(daySevenCommand);
         // nextNarration();
-        if (alive)
-            break;
+
     }
     if (alive == false)
     {

@@ -205,14 +205,17 @@ int dayTwoChoice(string &command)
         cout << "papers scattered and notebooks filled with dead ends and failures." << endl;
         nextNarration();
         cout << "Every experiment feels like a nail in the coffin of hope." << endl;
-        cout << "As your gaze falls on the rows of cages, you nearly look away—until a faint,"
-                " unexpected movement catches your eye." << endl;
-        nextNarration();
-        cout << "One of the test mice, which had shown every symptom, now stands alert, its breathing steady." << endl;
-        cout << "You blink, hardly daring to believe it. Heart pounding, you lean closer. Could it be? " << endl;
-        cout << "Amidst all the failures, "
-                "this one resilient creature might just hold the answer you’ve been searching for." << endl;
-        nextNarration();
+        if (cure > 1)
+        {
+            cout << "As your gaze falls on the rows of cages, you nearly look away—until a faint,"
+                   " unexpected movement catches your eye." << endl;
+            nextNarration();
+            cout << "One of the test mice, which had shown every symptom, now stands alert, its breathing steady." << endl;
+            cout << "You blink, hardly daring to believe it. Heart pounding, you lean closer. Could it be? " << endl;
+            cout << "Amidst all the failures, "
+                    "this one resilient creature might just hold the answer you’ve been searching for." << endl;
+            nextNarration();
+        }
     }
     if(command == "radio")
     {
