@@ -126,9 +126,43 @@ void dayThree()
             cout << " and take one last look at the room before stepping into the daylight." << endl;
             cout << " There’s no more time—the night will soon bring them back, and you must be gone before then." << endl;
             nextNarration();
+            if (weapon)
+            {
+                cout << "You work carefully, measuring and refining each step,"
+                        " watching the unrefined vaccine transform slowly into a clear, potent serum." << endl;
+                cout << "Hours slip by unnoticed until you glance out the "
+                        "window and see the darkening sky—it’s nightfall." << endl;
+                cout << "A chill runs down your spine,"
+                        " but your fingers brush against the weapon at your side,"
+                        " filling you with a burst of confidence." << endl;
+                cout << "Securing the refined vaccine in your pack,"
+                        " you make your way out, weapon in hand, alert to every sound and shadow." << endl;
+                cout << "Zombies begin to emerge from darkened alleys, drawn to any movement,"
+                        " but you stay focused, ready to face them if they come too close." << endl;
+                cout << "With swift, cautious steps,"
+                        " you slip past the undead, using your weapon to fend off any that stray too near." << endl;
+                cout << "Finally, you break free of the city’s edge,"
+                        " the vaccine in your possession and freedom within reach." << endl;
+                cout << "You’ve survived the night and escaped with hope for a cure." << endl;
+            } else {
+                cout << "Focused on the task, you carefully refine the vaccine,"
+                        " every step bringing it closer to completion." << endl;
+                cout << "But when you finally finish,"
+                        " the last rays of daylight have faded, leaving you in pitch darkness." << endl;
+                cout << "A chill prickles your skin as you realize it’s night—the deadliest time to leave." << endl;
+                cout << "With no weapon to defend yourself, "
+                        "you hesitate, but there’s no other choice; you have to escape." << endl;
+                cout << "Steeling yourself, you make your way out, every sound amplified in the oppressive silence." << endl;
+                cout << "Shadows shift and figures begin to close in, drawn to your movement." << endl;
+                cout << "Panicked, you try to pick up speed, but cold,"
+                        " grasping hands reach out from the darkness, pulling you down." << endl;
+                cout << "The last thing you see is the glint of the refined vaccine slipping from your grasp,"
+                        " swallowed by the night." << endl;
+            }
         }
         if (choice == "escape")
         {
+            cout << "Neutral end: " << endl;
             cout << "You glance at the unrefined vaccine in your hand, feeling the weight of its importance." << endl;
             cout << "There’s no time to process it—no time to wait." << endl;
             cout << "With a deep breath, you tuck the vial carefully into your pack, "
