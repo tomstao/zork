@@ -94,8 +94,10 @@ int main() {
     {
         cout << "GAME OVER" << endl;
     }
-
-    cout << "Congratulations! You've completed the game!" << endl;
+    else
+    {
+        cout << "Congratulations! You've completed the game!" << endl;
+    }
 
     return 0;
 }

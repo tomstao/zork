@@ -342,7 +342,7 @@ int dayTwoChoice(string &command)
 
     if ( option == "raid" )
     {
-        if (int chance = rand() % 100; chance < 10 )
+        if (int chance = rand() % 100; chance < 99 )
         {
             cout << "Determined, you slip into the night, hoping to reach the police department undetected." << endl;
             cout << "The silence is thick, every step a reminder of the danger around you." << endl;
@@ -354,22 +354,22 @@ int dayTwoChoice(string &command)
             cout << "Cold, lifeless hands grasp at you, pulling you down as the moans grow louder." << endl;
             cout << "As the world fades, you realize this night raid was your last." << endl;
             cout << endl;
-        } else
-        {   weapon = true;
-            cout << "You take a deep breath, steeling yourself for the night raid." << endl;
-            cout << "With your supplies strapped tight, you slip into the darkness,"
-                    " moving carefully between shadows to avoid the undead." << endl;
-            cout << "The city is eerily silent, each step echoing in the night, but you keep your focus sharp." << endl;
-            cout << "After what feels like an eternity, you reach the police department,"
-                    " prying open the door and slipping inside." << endl;
-            nextNarration();
-            cout << "Rows of lockers line the walls, and after a few tense moments, "
-                    "you find a stash of weapons and a canister of gas." << endl;
-            cout << "Heart pounding, you make your way back,"
-                    " retracing your path in silence." << endl;
-            cout << "When you finally reach your hideout, you close the door behind you,"
-                    " victorious and better prepared for the escape tomorrow." << endl;
+            return alive = false;
         }
+        weapon = true;
+        cout << "You take a deep breath, steeling yourself for the night raid." << endl;
+        cout << "With your supplies strapped tight, you slip into the darkness,"
+            " moving carefully between shadows to avoid the undead." << endl;
+        cout << "The city is eerily silent, each step echoing in the night, but you keep your focus sharp." << endl;
+        cout << "After what feels like an eternity, you reach the police department,"
+            " prying open the door and slipping inside." << endl;
+        nextNarration();
+        cout << "Rows of lockers line the walls, and after a few tense moments, "
+            "you find a stash of weapons and a canister of gas." << endl;
+        cout << "Heart pounding, you make your way back,"
+            " retracing your path in silence." << endl;
+        cout << "When you finally reach your hideout, you close the door behind you,"
+            " victorious and better prepared for the escape tomorrow." << endl;
     }
     if ( option == "wait" )
     {
