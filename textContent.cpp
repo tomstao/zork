@@ -129,20 +129,22 @@ void dayThree()
         }
         if (choice == "escape")
         {
+            cout << "You glance at the unrefined vaccine in your hand, feeling the weight of its importance." << endl;
+            cout << "There’s no time to process it—no time to wait." << endl;
+            cout << "With a deep breath, you tuck the vial carefully into your pack, "
+                    "hoping it will still be enough." << endl;
             nextNarration();
-            cout << " You stare at the vial, knowing it’s unrefined, incomplete." << endl;
-            cout << "  But the approaching shadows and distant, echoing moans make the choice clear:" << endl;
-            cout << " there’s no time. You slip the raw vaccine carefully into your pack,"
-                    " hoping it holds the potential to turn the tide" << endl;
+            cout << "As the first light of dawn breaks over the ruins,"
+                    " you slip out of the hideout, heart pounding as you move quickly and silently." << endl;
+            cout << "The streets are empty, the undead still lurking in the shadows, "
+                    "too sluggish to give chase." << endl;
+            cout << "Step by step, you make your way through the deserted streets,"
+                    " each turn bringing you closer to freedom." << endl;
             nextNarration();
-            cout << " —even if it’s untested. Heart pounding, you gather your remaining supplies, "
-                    "feeling the weight of this desperate gamble. " << endl;
-            cout << " As you step into the fading daylight, you clutch your pack tightly, nerves taut." << endl;
-            nextNarration();
-            cout << " The sun is already beginning its descent; nightfall—and the undead—are only hours away." << endl;
-            cout << " There’s no room for hesitation now. With one last glance at your abandoned hideout, " << endl;
-            cout << "  you turn and make for the open road, carrying both hope and uncertainty on your back." << endl;
-            nextNarration();
+            cout << "Finally, you reach the city’s edge,"
+                    " adrenaline giving way to relief as you leave the danger behind." << endl;
+            cout << "With the unrefined vaccine safely in your possession, "
+                    "you’ve escaped—alive, and with a glimmer of hope for the future." << endl;
         }
     }
 }
