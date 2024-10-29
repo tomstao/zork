@@ -63,16 +63,12 @@ int dayOneChoice(string &command)
             if (chance < 5)
             {
                 cout << "Your noise attracted the zombies, you got bitten, that's the end of your life." << endl;
-                alive = false;
+                 return alive = false;
             }
-            else
-            {
-                cout << "After you gathered enough gas, you decided to sleep in car," << endl;
-                cout << "if anything happens, you just drive your car and run away." << endl;
-                cout << "Luckily, you didn't encounter any danger, safely drove back home" << endl;
-                gas += 3;
-            }
-
+            cout << "After you gathered enough gas, you decided to sleep in car," << endl;
+            cout << "if anything happens, you just drive your car and run away." << endl;
+            cout << "Luckily, you didn't encounter any danger, safely drove back home" << endl;
+            gas += 3;
         }
 
     }
@@ -136,10 +132,9 @@ int dayOneChoice(string &command)
 
 int dayTwoChoice(string &command)
 {
-    string choice = "placeholder";
     if(command == "weapon")
     {
-
+        string choice;
         cout << "You step cautiously into the abandoned shop,"
                 " the faint stench of rot filling the air. " << endl;
         cout << "The shelves are in disarray, items strewn across the floor,"
@@ -175,19 +170,30 @@ int dayTwoChoice(string &command)
                         " its broken nails clawing the air." << endl;
                 cout << "There’s no time to think—only to act. You grip your weapon tightly,"
                         " bracing yourself as the undead converge, determined to tear you apart." << endl;
-                return alive = false;
+                alive = false;
+            } else weapon = true;
+            {
+                cout << "You hold your breath, keeping still as the moans drift closer,"
+                    " shadows moving just out of sight." << endl;
+                cout << "Carefully, you edge toward a shelf lined with tools and spot an old "
+                    "crowbar glinting faintly in the dim light." << endl;
+                nextNarration();
+                cout << " Hands shaking, you reach for it, lifting it with deliberate silence."
+                    " Armed now, you grab a small hammer and a sturdy knife, slipping them into your bag." << endl;
+                cout << "With one last glance toward the shuffling figures hidden in "
+                    "the aisles, you inch your way back to the door. " << endl;
+                cout << "The zombies remain oblivious as you step outside, heart pounding but victorious." << endl;
             }
-            weapon = true;
-            cout << "You hold your breath, keeping still as the moans drift closer,"
-                " shadows moving just out of sight." << endl;
-            cout << "Carefully, you edge toward a shelf lined with tools and spot an old "
-                "crowbar glinting faintly in the dim light." << endl;
-            nextNarration();
-            cout << " Hands shaking, you reach for it, lifting it with deliberate silence."
-                " Armed now, you grab a small hammer and a sturdy knife, slipping them into your bag." << endl;
-            cout << "With one last glance toward the shuffling figures hidden in "
-                "the aisles, you inch your way back to the door. " << endl;
-            cout << "The zombies remain oblivious as you step outside, heart pounding but victorious." << endl;
+
+            if(choice == "back")
+            {
+                cout << "Each creak and echo in the darkened aisles stirs an uneasy feeling, a growing sense that you're not alone." << endl;
+                cout << "The weight of the silence presses down, and an icy chill creeps up your spine, urging you to turn back." << endl;
+                cout << "You take one last look at the cluttered shelves, swallowing your frustration and fear." << endl;
+                cout << "Deciding it’s not worth the risk, you back away carefully, keeping an eye on the shadows as you slip out the door." << endl;
+                cout << "Once outside, you let out a breath you didn’t realize you were holding, grateful to have escaped whatever lurked within." << endl;
+            }
+
         }
 
 
@@ -325,7 +331,11 @@ int dayTwoChoice(string &command)
     cout << "in the dark, where every sound could bring them swarming." << endl;
     cout << endl;
     cout << "Your mind races, weighing the options. Do you risk a night raid,"
-            " slipping through the shadows to search for fuel and weapons?" << endl;
+            " slipping through the shadows to search for fuel";
+    if (weapon)
+    {
+        cout << " and weapons?" << endl;
+    } else cout << endl;
     nextNarration();
     cout << "Or do you wait for the dawn,"
             " escaping as soon as the light can shield you—knowing your supplies may not last?" << endl;
@@ -342,7 +352,7 @@ int dayTwoChoice(string &command)
 
     if ( option == "raid" )
     {
-        if (int chance = rand() % 100; chance < 99 )
+        if (int chance = rand() % 100; chance < 10 )
         {
             cout << "Determined, you slip into the night, hoping to reach the police department undetected." << endl;
             cout << "The silence is thick, every step a reminder of the danger around you." << endl;

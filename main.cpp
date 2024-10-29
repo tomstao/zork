@@ -40,25 +40,29 @@ int main() {
         if (alive == false)
             break;
 
-        cout << days << " left." << endl;
+        cout << days << " days left." << endl;
 
         dayTwo();
         do
         {
             cin >> dayTwoCommand;
             clearInput();
-        } while ((dayTwoCommand != "weapon"  || weapon == false) && dayTwoCommand != "gather" &&
-            "radio" && dayTwoCommand !="lab");
+        } while (dayTwoCommand != "weapon"  && weapon == false && dayTwoCommand != "gather" &&
+            dayTwoCommand != "radio" && dayTwoCommand !="lab");
         dayTwoChoice(dayTwoCommand);
         nextNarration();
         if (alive == false)
             break;
         days = days - 1;
-        cout << days << " left." << endl;
+        cout << days << " day left." << endl;
 
 
         dayThree();
-        getCommand(dayThreeCommand);
+        // do
+        // {
+        //     cin >> dayThreeCommand;
+        //     clearInput();
+        // } while ();
         dayThreeChoice(dayThreeCommand);
         nextNarration();
 
@@ -81,14 +85,8 @@ int main() {
         // getCommand(daySevenCommand);
         // daySevenChoice(daySevenCommand);
         // nextNarration();
-
-
-        getCommand(command);
-        currentMove = movePlayer(currentMove, command);
-
-        if (isGameOver(currentMove)) {
-            gameWon = true;
-        }
+        if (alive)
+            break;
     }
     if (alive == false)
     {

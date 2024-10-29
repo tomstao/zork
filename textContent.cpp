@@ -181,6 +181,42 @@ void dayThree()
                     "you’ve escaped—alive, and with a glimmer of hope for the future." << endl;
         }
     }
+    if (gas >= 5 && food >=5 && weapon)
+    {
+        cout << "With your pack weighed down by food,"
+                " gas, and a sturdy weapon, you take one last look at the city that had once been home." << endl;
+        cout << "The vaccine project lingers in your mind—a hope left unrealized,"
+                " a cure left untouched." << endl;
+        cout << "But survival has its own pull,"
+                " and you know what you need to do. Steeling yourself, you set out into the night, your path illuminated only by dim streetlights and the stars above." << endl;
+        cout << "Zombies emerge from the shadows, "
+                "drawn by your movement, but this time you’re ready." << endl;
+            nextNarration();
+        cout << "With weapon in hand, you fend them off,"
+                " each fight fueling your resolve to survive, even if the world may never return to what it was." << endl;
+        cout << "You push forward, never looking back,"
+                " leaving behind the faint glimmer of a cure for a future uncertain yet possible." << endl;
+        cout << "In the end, you chose survival over salvation,"
+                " carving your own path through the darkness." << endl;
+    } else if (weapon == false)
+    {
+            cout << "With food and gas secured, you leave the city behind,"
+                    " hoping it’s enough to carry you far from this nightmare." << endl;
+            cout << "But as you make your way through the streets,"
+                    " the shadows begin to stir, and you realize—too late—that you’re unarmed." << endl;
+            cout << "The undead emerge from alleyways and broken windows, "
+                    "drawn to the sound of your footsteps, and panic surges through you." << endl;
+            nextNarration();
+            cout << "You quicken your pace,"
+                    " but without a weapon to defend yourself, the distance between you and the horde shrinks rapidly." << endl;
+            cout << "Desperation drives you forward, "
+                    "yet the relentless grip of cold, decaying hands pulls you down." << endl;
+            cout << "As the world fades, "
+                    "you think of the vaccine you left behind—a hope that now feels like an echo, lost in the darkness." << endl;
+            cout << endl;
+            alive = false;
+    }
+
 }
 
 void dayFour()
