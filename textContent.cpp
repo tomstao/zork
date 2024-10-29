@@ -57,7 +57,7 @@ void dayOne()
     nextNarration();
     cout << "Pick up your key to drive to exploring the nearby area(Enter key)." <<endl;
     cout << "Gather initial supplies without driving your car in order to save gas.(Enter gather)." <<endl;
-    cout << "Try to catch the last hope in your basement lab to find clues about the virus outbreak (Enter lab)." <<endl;
+    cout << "Try to catch the last hope in the old lab nearby to find clues about the virus outbreak (Enter lab)." <<endl;
     cout << "To check the radio one last time at the dock.(Enter radio)" << endl;
 }
 

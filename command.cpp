@@ -271,7 +271,8 @@ int dayTwoChoice(string &command)
                 food += 1;
                 gas += 1;
 
-                cout << "You glance at your dwindling supplies, knowing it won’t be enough for the journey ahead." << endl;
+                cout << "You glance at your dwindling supplies, "
+                        "knowing it won’t be enough for the journey ahead." << endl;
                 cout << " The road to the next city is long and uncertain, and without more food and gas," << endl;
                 cout << "the attempt would be suicide. " << endl;
                 nextNarration();
@@ -305,11 +306,86 @@ int dayTwoChoice(string &command)
             " and faint footprints—shuffling and dragging—lead ominously away from the building." << endl;
     nextNarration();
     cout << " The realization hits you like a punch to the gut: they’ve found you." << endl;
-    cout << " Anxiety tightens your chest as you glance around, the familiar surroundings now feeling like a trap." << endl;
+    cout << " Anxiety tightens your chest as you glance around, the familiar surroundings now"
+            " feeling like a trap." << endl;
     nextNarration();
     cout << " There’s no choice left; by tomorrow, you’ll have to be gone." << endl;
-    cout << " You retreat inside, packing with urgency, knowing tonight is your last in what was once a place of safety." << endl;
+    cout << " You retreat inside, packing with urgency, knowing tonight is your last"
+            " in what was once a place of safety." << endl;
     nextNarration();
+    cout << "As you peer through a crack in the boarded-up window, you see the shadowy figures of "
+            "zombies slowly gathering outside," << endl;
+    cout << "their lifeless eyes fixed on your hideout."
+            " Your stomach tightens—staying here isn’t an option." << endl;
+    cout << "But as you scan your supplies, the reality sinks in: you’re low on weapons,"
+            " and the gas in your tank won’t carry you far." << endl;
+    nextNarration();
+    cout << "The nearby police department might hold what you need, "
+            "but venturing out at night means facing them in their element," << endl;
+    cout << "in the dark, where every sound could bring them swarming." << endl;
+    cout << endl;
+    cout << "Your mind races, weighing the options. Do you risk a night raid,"
+            " slipping through the shadows to search for fuel and weapons?" << endl;
+    nextNarration();
+    cout << "Or do you wait for the dawn,"
+            " escaping as soon as the light can shield you—knowing your supplies may not last?" << endl;
+    cout << "The silence presses down, the undead just beyond your walls, "
+            "and time slips away as you stand on the brink of a decision" << endl;
+    cout << "that could mean survival or the end." << endl;
+    string option;
+    do
+    {       cout << R"(Enter "raid" or "wait")" << endl;
+            cin >> option;
+        clearInput();
+
+    } while ( option != "raid" && option!= "wait" );
+
+    if ( option == "raid" )
+    {
+        if (int chance = rand() % 100; chance < 10 )
+        {
+            cout << "Determined, you slip into the night, hoping to reach the police department undetected." << endl;
+            cout << "The silence is thick, every step a reminder of the danger around you." << endl;
+            cout << "Halfway there, your foot lands on broken glass, the sharp crack echoing through the empty streets." << endl;
+            cout << "You freeze, but it’s too late. Shadows begin to stir, and from every alleyway, the undead emerge, drawn by the sound." << endl;
+            nextNarration();
+            cout << "Panic floods your veins as they close in, blocking the path forward and sealing off your escape route." << endl;
+            cout << "You turn, breaking into a desperate sprint, but there’s nowhere left to run." << endl;
+            cout << "Cold, lifeless hands grasp at you, pulling you down as the moans grow louder." << endl;
+            cout << "As the world fades, you realize this night raid was your last." << endl;
+            cout << endl;
+        } else
+        {   weapon = true;
+            cout << "You take a deep breath, steeling yourself for the night raid." << endl;
+            cout << "With your supplies strapped tight, you slip into the darkness,"
+                    " moving carefully between shadows to avoid the undead." << endl;
+            cout << "The city is eerily silent, each step echoing in the night, but you keep your focus sharp." << endl;
+            cout << "After what feels like an eternity, you reach the police department,"
+                    " prying open the door and slipping inside." << endl;
+            nextNarration();
+            cout << "Rows of lockers line the walls, and after a few tense moments, "
+                    "you find a stash of weapons and a canister of gas." << endl;
+            cout << "Heart pounding, you make your way back,"
+                    " retracing your path in silence." << endl;
+            cout << "When you finally reach your hideout, you close the door behind you,"
+                    " victorious and better prepared for the escape tomorrow." << endl;
+        }
+    }
+    if ( option == "wait" )
+    {
+        cout << "You glance out into the pitch-black streets,"
+                " the distant sounds of shuffling and groaning reaching your ears." << endl;
+        cout << "The weight of the night presses down, every shadow hiding unseen dangers." << endl;
+        cout << "You tighten your grip on your supplies, nerves fraying, but sense prevails." << endl;
+        cout << "Venturing out now, into the dark, could mean certain death." << endl;
+        cout << "Instead, you decide to wait until dawn,"
+                " when the sun will force the undead into hiding." << endl;
+        cout << "Settling back into your hideout, you keep your ears alert,"
+                " every creak of the building reminding you that time is running out." << endl;
+        cout << "With a plan set, you hold on, "
+                "eyes trained on the first hint of morning light, ready to move as soon as day breaks." << endl;
+    }
+
     return 0;
 }
 
