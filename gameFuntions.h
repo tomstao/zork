@@ -7,6 +7,7 @@
 
 void nextNarration();
 void clearInput();
+void clearConsole();
 
 
 

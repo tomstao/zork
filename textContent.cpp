@@ -264,11 +264,13 @@ if(radio == 2 && weapon == false)
                 "a lifeline in the emptiness. You set out with only a small pack, winding through the darkened streets as the last light fades." << endl;
         cout << "But as you approach the waterfront,"
                 " shadows gather in the alleys, shuffling forward—dozens of hollow-eyed figures, jaws slack and hands reaching." << endl;
+        nextNarration();
         cout << "Heart racing, you grip a broken pipe,"
                 " your only weapon, and swing wildly as they close in."
                 " The first zombie falls with a heavy thud, but the horde surges, pressing forward with mindless determination." << endl;
         cout << "You strike again and again, each impact shuddering up your arms,"
                 " but they keep coming, relentless and unfeeling, their numbers overpowering your fading strength." << endl;
+        nextNarration();
         cout << "Desperation mounts as your strikes slow, your arms growing heavy,"
                 " but the cold, dead hands latch onto you, pulling you down." << endl;
         cout << "In a final, fading moment, you glimpse the boat’s distant light,"
@@ -282,12 +284,14 @@ if(radio == 2 && weapon == false)
         cout << "Heart pounding, you grab your pack and secure your weapons,"
                 " feeling the reassuring weight of steel in your grip." << endl;
         cout << "Moving quickly through the streets, you see them—the undead emerging from the shadows, their twisted forms advancing." << endl;
+        nextNarration();
         cout << "With a deep breath, you raise your weapon, "
                 "the first swing landing with a sickening crunch. Another zombie lunges, and you thrust it back, the blade biting into its decayed flesh." << endl;
         cout << "Step by step, you carve a path through the horde, "
                 "fighting fiercely as more surround you, hands clawing and teeth gnashing. You dodge, strike, and push forward, adrenaline burning through the exhaustion." << endl;
         cout << "As you near the port, more undead close in, "
                 "forming a barricade between you and the water’s edge, but you refuse to stop. With a desperate yell, you fight harder, your swings wild yet precise, fending off the advancing swarm." << endl;
+        nextNarration();
         cout << "Just as your strength wanes,"
                 " a spotlight breaks the darkness—the boat! Summoning every ounce of resolve, you force your way through, leaping onto the deck just as cold fingers graze your heels." << endl;
         cout << "You collapse, battered and breathless, "

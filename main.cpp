@@ -5,6 +5,7 @@
 #include "gameFuntions.h"
 #include "invetory.h"
 #include "textContent.h"
+#include <cstdlib>
 #include "status.h"
 
 
@@ -15,8 +16,6 @@ bool isGameOver(int room);
 int main() {
     int currentMove = 0;  // Starting room
     string command;
-    bool gameWon = false;
-
     printIntroduction();
     nextNarration();
     printIntroduction2();
