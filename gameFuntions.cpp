@@ -17,6 +17,7 @@ void nextNarration()
         clearInput();
     }
     clearInput();
+    cout << "***********************************************************************************************" << endl;
 }
 
 void clearInput()
@@ -24,4 +25,14 @@ void clearInput()
     using namespace std;
     cin.clear();
     cin.ignore(1000, '\n');
+
+}
+
+
+
+void endGame()
+{
+    nextNarration();
+    using namespace std;
+    cout << "end" << endl;
 }

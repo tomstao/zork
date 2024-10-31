@@ -1,9 +1,12 @@
 # ninja log v6
-16	479	1729090493198556765	CMakeFiles/zork.dir/command.cpp.o	d43f5497aa8c0d32
-5	51	1729083236107190127	CMakeFiles/zork.dir/invetory.cpp.o	e567ba8286caaf10
-14	478	1729090493197412549	CMakeFiles/zork.dir/main.cpp.o	ed761db5a66b192a
-480	563	1729090493662542165	zork	302fe614b28243
-16	479	1729090493198701350	CMakeFiles/zork.dir/textContent.cpp.o	6ffe7a28f92a070e
-16	480	1729090493198819600	CMakeFiles/zork.dir/gameFuntions.cpp.o	bacafcbff9af32f8
-2	54	1729091052479590450	build.ninja	3ddde4a9f544dbbd
-15	478	1729090493198348972	CMakeFiles/zork.dir/room.cpp.o	e34777baa0c107e4
+5	323	1729130847938070305	CMakeFiles/zork.dir/room.cpp.o	e34777baa0c107e4
+7	318	1730234756081938687	CMakeFiles/zork.dir/gameFuntions.cpp.o	bacafcbff9af32f8
+2	49	1730235751710566612	build.ninja	3ddde4a9f544dbbd
+6	439	1729870052234105948	CMakeFiles/zork.dir/invetory.cpp.o	e567ba8286caaf10
+7	481	1729865170830408089	CMakeFiles/zork.dir/status.cpp.o	350a84e880fc66d9
+7	281	1730235202869029785	CMakeFiles/zork.dir/textContent.cpp.o	6ffe7a28f92a070e
+287	313	1730235226638747030	zork	52566bb344f4d41d
+6	287	1730235226357306104	CMakeFiles/zork.dir/main.cpp.o	ed761db5a66b192a
+5	272	1730235210921104182	CMakeFiles/zork.dir/command.cpp.o	d43f5497aa8c0d32
+4	363	1730236015419127203	CMakeFiles/zork.dir/command.cpp.o	d43f5497aa8c0d32
+363	450	1730236015777799697	zork	52566bb344f4d41d

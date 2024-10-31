@@ -4,8 +4,6 @@ project(zork)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(zork main.cpp
-        room.cpp
-        room.h
         command.cpp
         command.h
         invetory.cpp
@@ -14,6 +12,4 @@ add_executable(zork main.cpp
         textContent.h
         gameFuntions.cpp
         gameFuntions.h
-        status.cpp
-        status.h
 )
