@@ -11,7 +11,6 @@ bool isGameOver(int room);
 
 // Main game loop
 int main() {
-    int currentMove = 0;  // Starting room
     string command;
     printIntroduction();
     nextNarration();
