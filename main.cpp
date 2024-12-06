@@ -55,34 +55,9 @@ int main() {
 
 
             dayThree();
-            // do
-            // {
-            //     cin >> dayThreeCommand;
-            //     clearInput();
-            // } while ();
             dayThreeChoice(dayThreeCommand);
             nextNarration();
             break;
-
-            // dayFour();
-            // getCommand(dayFourCommand);
-            // dayFourChoice(dayFourCommand);
-            // nextNarration();
-            //
-            // dayFive();
-            // getCommand(dayFiveCommand);
-            // dayFiveChoice(dayFiveCommand);
-            // nextNarration();
-            //
-            // daySix();
-            // getCommand(daySixCommand);
-            // daySixChoice(daySixCommand);
-            // nextNarration();
-            //
-            // daySeven();
-            // getCommand(daySevenCommand);
-            // daySevenChoice(daySevenCommand);
-            // nextNarration();
 
         }
         if (alive == false)
@@ -107,9 +82,8 @@ int main() {
     return 0;
 }
 
-// Function definitions
 
 
 bool isGameOver(int room) {
-    return room == 2;  // Game is over when the player reaches the treasure room
+    return room == 2;
 }
