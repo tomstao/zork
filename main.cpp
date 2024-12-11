@@ -8,7 +8,7 @@
 
 // Function declarations
 bool isGameOver(int room);
-
+//@Author : Tao Su
 // Main game loop
 int main() {
     char continueGame = 'y';
